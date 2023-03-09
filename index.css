@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.wrapper {
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto;
+  background-image:radial-gradient(rgb(44, 44, 171), rgb(120, 17, 120));
+  height: 100vh;
+  width: 100vw; 
+
+  /* position: relative; */
+}
+.games{
+    color: white;
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 3rem;
+    border-radius: 1rem;
+}
+.tic-tac-toe{
+    width: 90%;
+    max-width: 20rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3,1fr);
+    aspect-ratio: 1/1 ;
+
+
+}
+.box{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.box1, .box2 , .box4 , .box5{
+    border-right: 2px solid white;
+    border-bottom : 2px solid white;
+}
+.box3,.box6,.box9{
+    border-bottom: 2px solid white;
+}
+.box7,.box8{
+    border-right: 2px solid white;
+}
+
+
+.box {
+}
+p {
+  position: absolute;
+}
+button {
+  position: absolute;
+    bottom: 0;
+    margin-left: 50%;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+.box {
+  justify-content: center;
+  display: flex;
+}
+
+.btn.active{
+    display: flex;
+}
+.win{
+  background-color: rgb(27, 222, 76);
+}
+#duck{
+  position: absolute;
+  opacity: 0;
+  margin-left: 42rem;
+  margin-top: 7rem;
+  animation: ducky infinite timing-function delay iteration-count direction fill-mode;
+}
+@keyframes ducky {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(100);
+  }
+}
