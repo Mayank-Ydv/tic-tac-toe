@@ -76,6 +76,7 @@ function checkGameOver() {
                 boxes[position[2]].classList.add("win");
                 gameinfo.innerText=`winner is ${answer}`;
                 duck.style.opacity="1";
+                gameinfo.classList.add("win");
 
 
                 
