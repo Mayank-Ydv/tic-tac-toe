@@ -26,6 +26,8 @@ function initGame(){
         boxes[index].style.pointerEvents="all";
         boxes[index].classList.remove("win");
         duck.style.opacity ="0";
+        gameinfo.classList.remove("win");
+
 
 
     });
