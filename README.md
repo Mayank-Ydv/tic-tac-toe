@@ -64,14 +64,14 @@ test_zoom()##
 
 
 ## code 2
-import unittest
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-import time
+import unittest##
+from selenium import webdriver##
+from selenium.webdriver.common.by import By##
+from selenium.webdriver.support.ui import WebDriverWait##
+from selenium.webdriver.support import expected_conditions as EC##
+import time##
 
-class TestAddToCart(unittest.TestCase):
+class TestAddToCart(unittest.TestCase):##
 
     def test_add_to_cart_after_login(self):
         # Set up Chrome WebDriver
@@ -129,24 +129,24 @@ class TestAddToCart(unittest.TestCase):
         driver.quit()
         print("Test cases completed successfully.")
 
-if __name__ == "__main__":
-    unittest.main()
+if __name__ == "__main__":##
+    unittest.main()##
 
 
 
-##code 4
-import pytest
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-import time
+##code 3
+import pytest##
+from selenium import webdriver##
+from selenium.webdriver.common.by import By##
+from selenium.webdriver.support.ui import WebDriverWait##
+from selenium.webdriver.support import expected_conditions as EC##
+import time##
 
-class TestWynkMusicTest():
-    def setup_method(self, method):
-        self.driver = webdriver.Chrome()
-        self.driver.maximize_window()  # Maximize the browser window
-        self.wait = WebDriverWait(self.driver, 10)  # Use WebDriverWait for better element waiting
+class TestWynkMusicTest():##
+    def setup_method(self, method):##
+        self.driver = webdriver.Chrome()##
+        self.driver.maximize_window()  # Maximize the browser window##
+        self.wait = WebDriverWait(self.driver, 10)  # Use WebDriverWait for better element waiting##
 
     def teardown_method(self, method):
         self.driver.quit()
