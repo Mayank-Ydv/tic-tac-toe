@@ -21,12 +21,12 @@ def test_zoom():
 
         # Enter email
         email_input = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "email")))
-        email_input.send_keys("ymayank832@gmail.com")
+        email_input.send_keys("example.com")
         email_input.send_keys(Keys.RETURN)
 
         # Enter password
         password_input = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "password")))
-        password_input.send_keys("y052842004@M")
+        password_input.send_keys("example")
         password_input.send_keys(Keys.RETURN)
 
         # Start a new meeting
@@ -82,7 +82,7 @@ class TestAddToCart(unittest.TestCase):
         username_input = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.CLASS_NAME, "userInputBox"))
         )
-        username_input.send_keys("9918050815")
+        username_input.send_keys("675685875")
 
         # Click login button
         next_button = WebDriverWait(driver, 10).until(
@@ -158,7 +158,7 @@ class TestWynkMusicTest():
 
         # Enter phone number
         phone_input = self.wait.until(EC.element_to_be_clickable(("xpath", "/html/body/div[3]/div/div/div/div/div[2]/div/div[2]/div[2]/form/div[1]/input")))
-        phone_input.send_keys("8960044221")  # Replace with your phone number
+        phone_input.send_keys("6457686887")  # Replace with your phone number
 
         # Click on the continue button
         continue_button = self.driver.find_element("xpath", "/html/body/div[3]/div/div/div/div/div[2]/div/div[2]/div[2]/form/div[2]/button[2]")
