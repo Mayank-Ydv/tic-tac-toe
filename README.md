@@ -1,4 +1,3 @@
-    try:
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -12,6 +11,7 @@ def test_zoom():
     # Set up Chrome WebDriver (you can use another browser by changing this line)
     driver = webdriver.Chrome()
 
+    try:
         # Open Zoom website
         driver.get("https://zoom.us/")
 
