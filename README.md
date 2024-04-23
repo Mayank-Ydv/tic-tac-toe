@@ -1,15 +1,17 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-import time
+##code 1##
 
-Function to schedule a new Zoom meeting and start screen sharing
-def test_zoom():
-    # Set up Chrome WebDriver (you can use another browser by changing this line)
-    driver = webdriver.Chrome()
+from selenium import webdriver##
+from selenium.webdriver.common.keys import Keys##
+from selenium.webdriver.common.by import By##
+from selenium.webdriver.common.action_chains import ActionChains##
+from selenium.webdriver.support.ui import WebDriverWait##
+from selenium.webdriver.support import expected_conditions as EC##
+import time##
+
+##Function to schedule a new Zoom meeting and start screen sharing##
+def test_zoom():##
+    ## Set up Chrome WebDriver (you can use another browser by changing this line)##
+    driver = webdriver.Chrome()##
 
     try:
         # Open Zoom website
@@ -55,13 +57,13 @@ def test_zoom():
         print("Test cases completed successfully.")
 
 # Run the test
-test_zoom()
+test_zoom()##
 
 
 
 
 
-## code for e-cart
+## code 2
 import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
